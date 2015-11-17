@@ -5,7 +5,7 @@ vendor/firmware/bcm43569A0.hcd
 vendor/firmware/bcm43569A1.hcd
 
 # GPS
--app/com.qualcomm.location.apk
+-priv-app/com.qualcomm.location.apk
 bin/gsiff_daemon
 etc/permissions/com.qualcomm.location.xml
 vendor/lib/hw/flp.default.so
@@ -53,9 +53,7 @@ lib/libsec-ril.so
 lib/libsecnativefeature.so
 lib/libsecril-client.so
 lib/librilswitch.so
-lib/libsec-ril.so
 lib/libcfiril.so
 vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libconfigdb.so
 vendor/lib/libxml.so
-vendor/lib/libtime_genoff.so
