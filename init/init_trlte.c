@@ -75,7 +75,6 @@ void cdma_properties(char default_cdma_sub[], char operator_numeric[],
     property_set("ro.telephony.default_cdma_sub", "0");
     property_set("ro.telephony.default_network", "10");
     property_set("ro.telephony.get_imsi_from_sim", "true");
-    property_set("telephony.lteOnCdmaDevice", "1");
 	property_set("ro.telephony.ril.config", "newril");
 }
 
