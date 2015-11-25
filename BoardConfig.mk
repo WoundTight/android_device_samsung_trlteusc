@@ -19,6 +19,11 @@ TARGET_OTA_ASSERT_DEVICE := trlteusc,SM-N910R4
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_trlte_usc_defconfig
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := krait
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
