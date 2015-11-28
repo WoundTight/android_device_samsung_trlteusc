@@ -26,7 +26,6 @@
  */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
