@@ -27,7 +27,7 @@ TARGET_CPU_VARIANT := krait
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/trlteusc/init/init_trlte.c
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/trlteusc/init/init_trlte.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # Radio
