@@ -25,11 +25,6 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/trlteusc/init/init_trlte.cpp
-TARGET_UNIFIED_DEVICE := true
-
 # Radio
 BOARD_RIL_CLASS := ../../../device/samsung/trlteusc/ril
 
