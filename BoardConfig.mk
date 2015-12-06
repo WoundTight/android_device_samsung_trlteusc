@@ -15,18 +15,15 @@
 # inherit from common trlte
 -include device/samsung/trlte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := trlteusc,SM-N910R4
+TARGET_OTA_ASSERT_DEVICE := trlteusc
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_trlte_usc_defconfig
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := krait
 
-# Radio
-BOARD_RIL_CLASS := ../../../device/samsung/trlteusc/ril
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/trlteusc/init/init_trlte.cpp
+TARGET_UNIFIED_DEVICE := true
 
 # inherit from the proprietary version
 -include vendor/samsung/trlteusc/BoardConfigVendor.mk
