@@ -37,10 +37,14 @@
 
 #include "init_msm.h"
 
-void gsm_properties()
+void cdma_properties(const char cdma_sub[], const char op_numeric[], const char op_alpha[])
 {
-    property_set("telephony.lteOnGsmDevice", "1");
-    property_set("ro.telephony.default_network", "9");
+    property_set("ril.subscription.types", "NV,RUIM");
+    property_set("ro.cdma.home.operator.numeric", op_numeric);
+    property_set("ro.cdma.home.operator.alpha", op_alpha);
+    property_set("ro.telephony.default_cdma_sub", cdma_sub);
+    property_set("ro.telephony.default_network", "10");
+    property_set("telephony.lteOnCdmaDevice", "1");
 }
 
 void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type)
@@ -61,21 +65,14 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_get("ro.bootloader", bootloader);
 
-    if (strstr(bootloader, "N910W8")) {
-        /* trltecan These values are taken from TMO and edited for the 910W8 FIXME */
-        property_set("ro.build.fingerprint", "samsung/trltevl/trltecan:6.0/MRA58K/N910W8UVU1ANIH:user/release-keys");
-        property_set("ro.build.description", "trltevl-user 6.0 MRA58K N910W8UVU1ANIH release-keys");
-        property_set("ro.product.model", "SM-N910W8");
-        property_set("ro.product.device", "trltecan");
-        gsm_properties();
-    } else {
-        /* trltetmo */
-        property_set("ro.build.fingerprint", "samsung/trltetmo/trltetmo:6.0/MRA58K/N910TUVU1ANIH:user/release-keys");
-        property_set("ro.build.description", "trltetmo-user 6.0 MRA58K N910TUVU1ANIH release-keys");
-        property_set("ro.product.model", "SM-N910T");
-        property_set("ro.product.device", "trltetmo");
-        gsm_properties();
-    }
+    if (strstr(bootloader, "N910R4")) {
+        /* trlteusc */
+        property_set("ro.build.fingerprint", "samsung/trlteusc/trlteusc:4.4.4/KTU84P/N910R4VPU1ANIE:user/release-keys");
+        property_set("ro.build.description", "trlteusc-user 4.4.4 KTU84P N910R4UVU1ANIH release-keys");
+        property_set("ro.product.model", "SM-N910R4");
+        property_set("ro.product.device", "trlteusc");
+        cdma_properties("0", "311580", "U.S.Cellular");
+    } 
 
     property_get("ro.product.device", device);
     strlcpy(devicename, device, sizeof(devicename));
