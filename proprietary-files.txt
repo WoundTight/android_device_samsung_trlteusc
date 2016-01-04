@@ -1,11 +1,21 @@
 # Bluetooth firmware
-vendor/firmware/bcm4358A1_V0044.0078.hcd
 vendor/firmware/bcm4358A0_V0033.0000.hcd
 vendor/firmware/bcm4358A0_V0033.0000_wisol.hcd
+vendor/firmware/bcm4358A1_V0044.0078.hcd
 vendor/firmware/bcm4358A1_V0044.0078_wisol.hcd
+vendor/firmware/bcm4358A1_V0051.0083.hcd 
+vendor/firmware/bcm4358A1_V0051.0083_wisol.hcd
+vendor/firmware/bcm4358A1_V0054.0095.hcd
+vendor/firmware/bcm4358A1_V0054.0095_wisol.hcd
+vendor/firmware/bcm43569.hcd
+vendor/firmware/bcm43569A0.hcd   
+vendor/firmware/bcm43569A1.hcd
+vendor/firmware/BT_FW_BCM4358A1_001.002.005.0032.0066.hcd
+vendor/firmware/sec_s3fwrn5_firmware.bin
+
 
 # GPS
--priv-app/com.qualcomm.location.apk
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk
 etc/permissions/com.qualcomm.location.xml
 vendor/lib/hw/flp.default.so
 lib/libloc_api_v02.so
