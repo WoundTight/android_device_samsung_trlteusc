@@ -2,8 +2,13 @@
 rild.libargs=-d /dev/smd0
 rild.libpath=/system/lib/libsec-ril.so
 ro.ril.telephony.mqanelements=6
-ro.telephony.ril_class=trlteRIL
 ro.telephony.get_imsi_from_sim=true
+ro.cdma.home.operator.numeric=311580
+ro.cdma.home.operator.alpha=U.S.Cellular
+telephony.lteOnCdmaDevice=1
+ro.telephony.default_network=10
+ril.subscription.types=NV,RUIM
+ro.telephony.default_cdma_sub=0
 
 # Temporary - Add fingerprint manually until it is corrected
 ro.build.fingerprint=samsung/trlteusc/trlteusc:6.0/MRA58K/N910R4USC1BOG2:user/release-keys
