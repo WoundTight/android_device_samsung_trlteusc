@@ -6,6 +6,8 @@ vendor/firmware/bcm43569A1.hcd
 lib/hw/bluetooth.default.so
 lib/libbluetooth_jni.so
 
+# NFC
+vendor/firmware/sec_s3fwrn5_firmware.bin
 
 # GPS
 priv-app/com.qualcomm.location/com.qualcomm.location.apk
