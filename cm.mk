@@ -17,13 +17,13 @@
 $(call inherit-product, device/samsung/trlteusc/full_trlteusc.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/beanstalk/config/nfc_enhanced.mk)
 
 # Inherit common CM phone.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/beanstalk/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := trlteusc
-PRODUCT_NAME := cm_trlteusc
+PRODUCT_NAME := bs_trlteusc
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=trlteusc TARGET_DEVICE=trlteusc BUILD_FINGERPRINT="samsung/trlteusc/trlteusc:5.1.1/MRA58K/N910R4USC1BOG2:user/release-keys" PRIVATE_BUILD_DESC="trlteusc-user 5.1.1 MRA58K N910R4USC1BOG2 release-keys"
